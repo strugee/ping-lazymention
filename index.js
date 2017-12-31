@@ -41,7 +41,7 @@ module.exports = function makePingTask(server, job_url) {
 				cb();
 			} else {
 				// XXX attach the body
-				var err = new Error('Got an unexpected status code from lazymention: ' + res.statusCode);
+				var err = new Error('Got an unexpected status code ' + res.statusCode + ' ' + res.statusMessage + ' from lazymention.');
 				log.error(err.toString());
 				cb(err);
 			}
