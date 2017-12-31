@@ -49,7 +49,6 @@ vows.describe('ping-webmention test').addBatch({
 		'it works': function(err, server) {
 			assert.ifError(err);
 			assert.isObject(server);
-			assert.isTrue(server.listening);
 		},
 		'and we require the module': {
 			topic: function() {
