@@ -18,7 +18,7 @@
 var vows = require('perjury'),
     assert = vows.assert,
     http = require('http'),
-    qs = require('qs');
+    qs = require('querystring');
 
 vows.describe('ping-webmention test').addBatch({
 	'When we set up a test server': {
