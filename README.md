@@ -1,6 +1,6 @@
 # `ping-lazymention`
 
-[![Build Status](https://travis-ci.org/strugee/ping-lazymention.svg?branch=master)](http://travis-ci.org/strugee/ping-lazymention)
+[![Build Status](https://travis-ci.org/strugee/ping-lazymention.svg?branch=master)](https://travis-ci.org/strugee/ping-lazymention)
 [![Coverage Status](https://coveralls.io/repos/github/strugee/ping-lazymention/badge.svg?branch=master)](https://coveralls.io/github/strugee/ping-lazymention?branch=master)
 [![npm](https://img.shields.io/npm/v/ping-lazymention.svg)](https://npmjs.com/package/ping-lazymention)
 [![Greenkeeper badge](https://badges.greenkeeper.io/strugee/ping-lazymention.svg)](https://greenkeeper.io/)
