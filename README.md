@@ -17,6 +17,8 @@ Originally designed as a [gulp](https://gulpjs.com/) task, but is useful otherwi
 
 The function exported by the module takes two arguments. The first is the full URL to a lazymention API endpoint. The second is the URL you want to submit for processing.
 
+When you call the module, it will return a new function configured with the two URLs. This second function takes one parameter, a callback function that will be invoked when the lazymention server has been (un)successfully pinged. This second function is designed to be a gulp task but it's not really tied to gulp.
+
 The module logs stuff to the console. This is nice if you're using gulp and probably annoying otherwise. I would take PRs to improve this situation, for example by adding an options object argument with a `quiet` option.
 
 ## Example
