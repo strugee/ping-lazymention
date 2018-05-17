@@ -27,7 +27,7 @@ Example inside a `gulpfile.js`:
 var gulp = require('gulp');
 var ping = require('ping-lazymention');
 
-gulp.task('ping', ping('http://example.com:21507/jobs/submit', 'https://example.com/blog/');
+gulp.task('ping', ping('http://example.com:21507/jobs/submit', 'https://example.com/blog/'));
 ```
 
 This example assumes that you have lazymention running on `example.com:21507`, and your blog that you want it to crawl is at `https://example.com/blog/`. Note that we've specified the full path to the API (i.e. `/jobs/submit`) in the first URL.
