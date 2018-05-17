@@ -20,7 +20,7 @@ var vows = require('perjury'),
     http = require('http'),
     qs = require('querystring');
 
-vows.describe('ping-webmention test').addBatch({
+vows.describe('ping-lazymention test').addBatch({
 	'When we set up a test server': {
 		topic: function() {
 			var cb = this.callback,
