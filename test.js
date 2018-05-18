@@ -18,7 +18,8 @@
 var vows = require('perjury'),
     assert = vows.assert,
     http = require('http'),
-    qs = require('querystring');
+    qs = require('querystring'),
+    concat = require('concat-stream');
 
 vows.describe('ping-lazymention test').addBatch({
 	'When we set up a test server': {
@@ -28,15 +29,25 @@ vows.describe('ping-lazymention test').addBatch({
 				    var components = req.url.split('?'),
 				        query = qs.parse(components[1]);
 
-				    switch (components[0]) {
-				    case '/generate_status':
-					    res.statusCode = query.code;
-					    res.end();
-					    break;
-				    default:
-					    res.statusCode = 404;
-					    res.end();
-				    }
+				    req.pipe(concat(function(buf) {
+					    var body = JSON.parse(buf.toString());
+					    // XXX this really belongs in a batch assertion
+					    if (body.url !== 'http://example.net/blog/') {
+						    res.statusCode = 400;
+						    res.end(body.url);
+						    return;
+					    }
+
+					    switch (components[0]) {
+					    case '/generate_status':
+						    res.statusCode = query.code;
+						    res.end(body.url);
+						    break;
+					    default:
+						    res.statusCode = 404;
+						    res.end();
+					    }
+				    }));
 			    });
 
 			server.listen(6471, function(err) {
