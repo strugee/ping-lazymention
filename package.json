@@ -1,6 +1,6 @@
 {
   "name": "ping-lazymention",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ping a lazymention server",
   "main": "index.js",
   "dependencies": {
