@@ -9,6 +9,10 @@
 * Fix incomplete/incorrect README documentation
 * Fix `coveralls` being marked as a production dependency, not a dev dependency
 
+### Added
+
+* Test on Node 10
+
 ## 1.0.0 - 2017-12-30
 
 ### Added
