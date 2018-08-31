@@ -2,6 +2,12 @@
 
 `ping-lazymention` follows [Semantic Versioning][1].
 
+## 2.0.0 - future
+
+### Breaking
+
+* Drop support for Node.js 4, 7 and 9
+
 ## 1.0.1 - 2018-05-17
 
 ### Fixed
