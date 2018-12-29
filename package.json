@@ -32,5 +32,9 @@
   "homepage": "https://github.com/strugee/ping-lazymention#readme",
   "engine": {
     "node": ">=6"
+  },
+  "greenkeeper": {
+    "dependencyUpdate": "Bump to ${dependency}@${version}",
+    "devDependencyUpdate": "Bump to ${dependency}@${version}"
   }
 }
