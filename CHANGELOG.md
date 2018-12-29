@@ -4,6 +4,10 @@
 
 ## 2.0.0 - future
 
+### Changed
+
+* Upgrade dependencies
+
 ### Breaking
 
 * Drop support for Node.js 4, 7 and 9
