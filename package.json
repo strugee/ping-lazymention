@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/strugee/ping-lazymention/issues"
   },
-  "homepage": "https://github.com/strugee/ping-lazymention#readme"
+  "homepage": "https://github.com/strugee/ping-lazymention#readme",
+  "engine": {
+    "node": ">=6"
+  }
 }
