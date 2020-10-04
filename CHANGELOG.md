@@ -7,6 +7,7 @@
 ### Changed
 
 * Upgrade dependencies
+* Switch from Perjury to Vows 1.0 alpha
 
 ### Breaking
 
